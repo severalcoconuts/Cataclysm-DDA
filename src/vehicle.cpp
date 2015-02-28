@@ -4090,11 +4090,11 @@ veh_collision vehicle::part_collision (int part, int x, int y, bool just_detect)
         if (pl_ctrl) {
             if (snd.length() > 0) {
                 //~ 1$s - vehicle name, 2$s - part name, 3$s - collision object name, 4$s - sound message
-                add_msg (m_warning, _("Your %1$s's %2$s rams into a %3$s with a %4$s"),
+                add_msg (m_warning, _("The whole shack shimmies!"),
                          name.c_str(), part_info(part).name.c_str(), obs_name.c_str(), snd.c_str());
             } else {
                 //~ 1$s - vehicle name, 2$s - part name, 3$s - collision object name
-                add_msg (m_warning, _("Your %1$s's %2$s rams into a %3$s."),
+                add_msg (m_warning, _("The whole shack shimmies!"),
                          name.c_str(), part_info(part).name.c_str(), obs_name.c_str());
             }
         } else if (snd.length() > 0) {
@@ -4111,11 +4111,11 @@ veh_collision vehicle::part_collision (int part, int x, int y, bool just_detect)
         if (pl_ctrl) {
             if (turns_stunned > 0 && z) {
                 //~ 1$s - vehicle name, 2$s - part name, 3$s - NPC or monster
-                add_msg (m_warning, _("Your %1$s's %2$s rams into %3$s and stuns it!"),
+                add_msg (m_warning, _("Everybody's movin', everybody's groovin' baby!"),
                          name.c_str(), part_info(part).name.c_str(), dname.c_str());
             } else {
                 //~ 1$s - vehicle name, 2$s - part name, 3$s - NPC or monster
-                add_msg (m_warning, _("Your %1$s's %2$s rams into %3$s!"),
+                add_msg (m_warning, _("Folks lining up outside just to get down!"),
                          name.c_str(), part_info(part).name.c_str(), dname.c_str());
             }
         }
